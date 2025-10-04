@@ -14,10 +14,10 @@ public class EmailGeneratorService {
     private final WebClient webClient ;
 
 
-    @Value("${gemini.api.url}")// This should be set in application.properties or application.yml it is the base URL for the Gemini API
+    @Value("${gemini_api_url}")// This should be set in application.properties or application.yml it is the base URL for the Gemini API
     private String geminiApiUrl;
 
-    @Value("${gemini.api.key}")// This should be set in application.properties or application.yml it is used to authenticate with the Gemini API
+    @Value("${gemini_api_key}")// This should be set in application.properties or application.yml it is used to authenticate with the Gemini API
     private String geminiApiKey;
 
     public EmailGeneratorService(WebClient.Builder webClientBuilder) {
