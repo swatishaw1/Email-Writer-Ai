@@ -109,7 +109,6 @@ cd Email-Writer-Ai
    - Open `chrome://extensions/`
    - Enable **Developer mode**
    - Click **Load unpacked**
-   - Select the `build/` folder
 
 ---
 
