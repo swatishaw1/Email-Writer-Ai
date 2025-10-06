@@ -88,7 +88,7 @@ cd Email-Writer-Ai
 1. Navigate to the backend folder.
 2. Add your **Gemini API key** in `application.properties` or as an environment variable:
    ```properties
-   gemini.api.key=YOUR_API_KEY
+   gemini_api_key=YOUR_API_KEY
    ```
 3. Build and run the backend:
    ```bash
