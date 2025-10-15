@@ -1,0 +1,28 @@
+<Typography variant='h3' component="h1" gutterBottom>
+    Email Reply Generator
+</Typography>
+
+1. <Typography>
+Typography is a Material-UI component used for text rendering.
+It automatically applies Material Design typography styles (font size, weight, line height, margins, etc.).
+You can set its variant (heading, body text, caption, etc.) and HTML element (component) separately.
+
+2. variant='h3'
+This tells MUI to use the H3 style from the theme (large, bold text).
+Variants in MUI include: h1, h2, h3, body1, body2, subtitle1, caption, etc.
+This affects styling, not the HTML element.
+
+3. component="h1"
+This changes the actual HTML tag rendered in the DOM.
+In this case, the text will be wrapped in an <h1> element but will have H3 styling.
+This is useful for SEO and accessibility — for example, you might want <h1> in the HTML for page hierarchy but keep it styled smaller.
+
+4. gutterBottom
+This is a shorthand prop in MUI that adds extra bottom margin to the text.
+It helps create spacing between headings and the content below.
+
+sx={{ py: 4 }} in Container
+sx is MUI’s inline styling prop.
+py = padding on the Y-axis (top + bottom).
+The number 4 here refers to MUI’s spacing scale:
+1 = 8px → so 4 = 32px.

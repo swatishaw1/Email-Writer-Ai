@@ -1,0 +1,23 @@
+.ai-reply-btn {
+  background: #1a73e8; /* Gmail blue */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.ai-reply-btn:hover {
+  background: #1558b0;
+}
+
+.tone-dropdown {
+  margin-left: 6px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+}
