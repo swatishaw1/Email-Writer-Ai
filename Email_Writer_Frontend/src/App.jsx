@@ -13,7 +13,6 @@ function App() {
     setLoading(true);
     setError('');
     try {
-      console.log(`here: ${import.meta.env.VITE_API_URL}`);
       const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/email/generator`,{emailContent,tone});
       //We are getting string from backend though its a additional check that respose is actually a string or not
       setGeneratedReply(typeof response.data==='string'?response.data:JSON.stringify(response.data));

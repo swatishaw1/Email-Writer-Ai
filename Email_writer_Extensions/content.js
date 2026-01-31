@@ -42,21 +42,21 @@ function createAIButton() {
     return button;
 }
 
-function getTheToneSelector(){
+function getTheToneSelector() {
     //Dropdown for tone
     const toneSelect = document.createElement("Select");
     toneSelect.className = "tone-dropdown";
     toneSelect.style.marginRight = '8px';
     ["Professional", "Friendly", "Concise", "Apologetic"].forEach(tone => {
-      const option = document.createElement("option");
-      option.value = tone.toLowerCase();
-      option.innerText = tone;
-      toneSelect.appendChild(option);
+        const option = document.createElement("option");
+        option.value = tone.toLowerCase();
+        option.innerText = tone;
+        toneSelect.appendChild(option);
     });
     return toneSelect;
 }
 
-function getWrapperClass(){
+function getWrapperClass() {
     // Wrapper for grouping
     const wrapper = document.createElement("div");
     wrapper.className = "ai-reply-wrapper";
@@ -86,7 +86,7 @@ function injectButton() {
     button.classList.add('ai-reply-button');
 
     console.log("Create the tone Dropdown.");
-    const toneSelect =getTheToneSelector();
+    const toneSelect = getTheToneSelector();
     toneSelect.classList.add('tone-dropdown');
 
     const wrapper = getWrapperClass();
@@ -116,7 +116,7 @@ function injectButton() {
             const composedBox = document.querySelector('[role="textbox"][g_editable="true"]');
             if (composedBox) {
                 composedBox.focus();
-                composedBox.innerHTML="";
+                composedBox.innerHTML = "";
                 document.execCommand('insertText', false, generatedReply);//This is basically a method which do actions without manupulating the actual DOM
                 //False is basically used for UI prompt for modern browsers we avoid it.
             }
@@ -137,7 +137,7 @@ function injectButton() {
     wrapper.appendChild(toneSelect);
 
     //Inserting the wrapper intro toolbar
-    toolbar.insertBefore(wrapper,toolbar.firstChild);
+    toolbar.insertBefore(wrapper, toolbar.firstChild);
 
 }
 
